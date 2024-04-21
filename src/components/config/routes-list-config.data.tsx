@@ -5,6 +5,7 @@ import { TRoute } from '../../shared-react-components/AlexRouter/AlexRouter.tsx'
 import { CustomizationPage, EPageType } from '../page/customization/customization-page.component.tsx'
 import { customizationPageConfig } from '../page/customization/data/customization-page-config.data.tsx'
 import {MainPage} from '../page/main/main-page.component.tsx'
+import {PageCalendar} from '../page/calendar/page-calendar.tsx'
 
 export const routesListConfig: TRoute[] = [
     {
@@ -41,6 +42,11 @@ export const routesListConfig: TRoute[] = [
         component: <CustomizationPage config={customizationPageConfig}/>,
     },
 
+    {
+        path: 'calendar',
+        name: 'Календарь',
+        component: <PageCalendar/>
+    }
 
     //
     // {

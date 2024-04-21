@@ -32,6 +32,7 @@ export const AlexBigCalendar: FC<IProps> = ({
 												storedOptions,
 												setServerSideOptions
 											}) => {
+	console.log(data)
 	const theme = useTheme()
 
 	return (<>
