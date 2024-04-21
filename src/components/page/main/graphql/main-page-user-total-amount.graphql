@@ -1,0 +1,7 @@
+query MainPageUserTotalAmount {
+    stat {
+        userTotalAmount {
+            data
+        }
+    }
+}

@@ -1,0 +1,17 @@
+query MainPageUserRegistrationHistory($input: TStatUserRegistrationHistoryInput!) {
+    stat {
+        userRegistrationHistoryList(input: $input) {
+            data {
+                time
+                value
+            }
+            summary {
+                sum
+                last
+                mean
+                min
+                max
+            }
+        }
+    }
+}
